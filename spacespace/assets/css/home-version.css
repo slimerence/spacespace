@@ -57,15 +57,15 @@ Home Version 2 CSS Here
 ========================*/
 
 .slide-bg-1 {
-    background-image: url(../img/slider-bg/slider-bg-1.jpg)
+    background-image: url('/../img/banner/banner1.jpg')
 }
 
 .slide-bg-2 {
-    background-image: url(../img/slider-bg/slider-bg-2.jpg)
+    background-image: url('/../img/banner/banner2.jpg')
 }
 
 .slide-bg-3 {
-    background-image: url(../img/slider-bg/slider-bg-3.jpg)
+    background-image: url('/../img/banner/banner3.jpg')
 }
 
 .home_version_1 .single-slide-item,
