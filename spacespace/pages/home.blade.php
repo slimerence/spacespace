@@ -68,8 +68,8 @@
                                     <!-- Single HeroBox Start -->
                                     <div class="col-lg-4 text-center">
                                         <div class="single-hero-box">
-                                            <img src="assets/img/svg-icon/house.svg" alt="Divergent Stufio">
-                                            <h3>Secure Living</h3>
+                                            <img src="{{ asset('img/svg-icon/house.svg') }}" alt="Space Space">
+                                            <h3>Best Products</h3>
                                             <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
                                         </div>
                                     </div>
@@ -78,8 +78,8 @@
                                     <!-- Single HeroBox Start -->
                                     <div class="col-lg-4 text-center">
                                         <div class="single-hero-box">
-                                            <img src="assets/img/svg-icon/crane.svg" alt="Divergent Stufio">
-                                            <h3>Accurate Build</h3>
+                                            <img src="{{ asset('img/svg-icon/crane.svg') }}" alt="Space Space">
+                                            <h3>Best Quailty</h3>
                                             <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
                                         </div>
                                     </div>
@@ -88,8 +88,8 @@
                                     <!-- Single HeroBox Start -->
                                     <div class="col-lg-4 text-center">
                                         <div class="single-hero-box">
-                                            <img src="assets/img/svg-icon/plug.svg" alt="Divergent Stufio">
-                                            <h3>Electric System</h3>
+                                            <img src="{{ asset('img/svg-icon/plug.svg') }}" alt="Space Space">
+                                            <h3>Best Staff</h3>
                                             <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
                                         </div>
                                     </div>
@@ -133,7 +133,7 @@
                 <!-- About Video Start -->
                 <div class="col-lg-6">
                     <div class="about-video">
-                        <iframe src="https://player.vimeo.com/video/25914191?title=0&byline=0&portrait=0"></iframe>
+                        <iframe src="https://www.youtube-nocookie.com/embed/O69q6FHR99U?rel=0&amp;showinfo=0"></iframe>
                     </div>
                 </div>
                 <!-- About Video End -->
@@ -212,183 +212,7 @@
         </div>
     </section>
     <!--== Service Area End ==-->
-
-    <!--== Project Area Start ==-->
-    <section id="project-area" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>Project <span>Gallery</span></h2>
-                        <p>Our awesome portfolios</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Project Menu Start -->
-                    <div class="project-menu text-center">
-                        <span data-filter="*" class="active">ALL</span>
-                        <span data-filter=".bathrooms">BATHROOMS</span>
-                        <span data-filter=".building">BUILDING</span>
-                        <span data-filter=".extensions">EXTENSIONS</span>
-                        <span data-filter=".refu">REFURBISHMENT</span>
-                    </div>
-                    <!-- Project Menu End -->
-
-                    <!-- Project Gird Start -->
-                    <div class="row project-gird">
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 refu building">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-1.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Craft Mansion Justorist</h3>
-                                        <p>Bathrooms, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 extensions bathrooms">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-2.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Mansion Justorist Craft</h3>
-                                        <p>Extentions, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 bathrooms refu">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-3.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Justorist Craft Mansion</h3>
-                                        <p>Construction, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 extensions bathrooms">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-4.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Justorist Craft Mansion</h3>
-                                        <p>Construction, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 bathrooms building">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-5.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Justorist Craft Mansion</h3>
-                                        <p>Construction, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 refu extensions">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-6.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Justorist Craft Mansion</h3>
-                                        <p>Construction, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 bathrooms extensions">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-7.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Justorist Craft Mansion</h3>
-                                        <p>Construction, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-
-                        <!-- Single Project Start -->
-                        <div class="col-lg-3 col-md-6 extensions refu">
-                            <a href="project-open.html" class="single-project">
-                                <img src="assets/img/project/project-item-8.jpg" alt="Divergent Studio">
-                                <div class="project-hover">
-                                    <div class="project-title-hvr">
-                                        <h3>Justorist Craft Mansion</h3>
-                                        <p>Construction, Building</p>
-                                    </div>
-                                    <div class="project-hvr-icon">
-                                        <p><i class="fa fa-heart"></i> 157</p>
-                                        <p class="alignright">21, August, 2017</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Single Project End -->
-                    </div>
-                    <!-- Project Gird End -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--== Project Area End ==-->
+@include(_get_frontend_layout_path('frontend.project'))
 
     <!--== Review Area Start ==-->
     <section id="review-area">
@@ -428,7 +252,7 @@
                             <p>Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display.</p>
 
                             <h3>VongChong Smith</h3>
-                            <h5>Divergent Studio</h5>
+                            <h5>Space Space</h5>
                         </div>
                         <!-- Single Testimonial End -->
                     </div>
@@ -438,87 +262,6 @@
     </section>
     <!--== Review Area End ==-->
 
-    <!--== partner Area Start ==-->
-    <div id="partner-area" class="section-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="partner-content">
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-1.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-2.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-3.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-4.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-1.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-3.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-
-                        <!-- Single Partner -->
-                        <div class="single-partner">
-                            <div class="display-table">
-                                <div class="display-table-cell">
-                                    <img src="assets/img/partner/partner-logo-4.jpg" alt="Divergent Studio">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Partner -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--== partner Area End ==-->
 
     <!--== News Area Start ==-->
     <section id="news-area" class="section-padding">
@@ -591,47 +334,5 @@
     </section>
     <!--== News Area End ==-->
 
-    <!--== Support Team Area Start ==-->
-    <section id="support-area" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>Support <span>Team</span></h2>
-                        <p>Our Supportive team members</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-9 aligncenter">
-                    <img src="assets/img/support-team.png" alt="Divergent Studio">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--== Support Team Area End ==-->
-
-    <!--== Newsletter Area Start ==-->
-    <section id="newsletter-area" class="parallax-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="newsletter-conetent">
-                        <div class="newsletter-title">
-                            <h2>Subscribe for Weekly Newsletter</h2>
-                        </div>
-                        <div class="newsletter-form text-right">
-                            <form action="index.html">
-                                <input type="email" name="news-email" placeholder="Enter Your Email Here">
-                                <input type="submit" value="Subscribe">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--== Newslatter Area End ==-->
 
 @endsection

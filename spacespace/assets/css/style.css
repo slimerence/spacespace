@@ -364,7 +364,7 @@
 
 #hero-area {
     background-color: #ddd;
-    background-image: url("assets/img/hero-area-bg.jpg");
+    background-image: url("/../img/hero-area-bg.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -728,15 +728,15 @@
 /*== News Area CSS Start ==*/
 
 .news-thumbg-1 {
-    background-image: url(assets/img/news/news-thum-1.jpg);
+    background-image: url('/../img/news/news-thum-1.jpg');
 }
 
 .news-thumbg-2 {
-    background-image: url(assets/img/news/news-thum-2.jpg);
+    background-image: url('/../img/news/news-thum-2.jpg');
 }
 
 .news-thumbg-3 {
-    background-image: url(assets/img/news/news-thum-3.jpg);
+    background-image: url('/../img/news/news-thum-3.jpg');
 }
 
 .single-news-content {
@@ -826,7 +826,7 @@
 /*== Newsletter Area CSS Start ==*/
 
 #newsletter-area {
-    background-image: url("assets/img/newsletterbg.jpg");
+    background-image: url("/../img/newsletterbg.jpg");
     background-position: left top;
     background-attachment: fixed;
     background-size: cover;

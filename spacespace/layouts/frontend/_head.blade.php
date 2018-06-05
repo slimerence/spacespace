@@ -6,10 +6,7 @@
     <!--=== Favicon ===-->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
 
-    <title>CONSTRUCTION - RESPONSIVE HTML5 BUSINESS TEMPLATE</title>
-
-    <link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <title>SPACE SPACE</title>
 
     <link href="{{ asset('css/all.css') }}" rel="stylesheet">
 

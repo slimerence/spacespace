@@ -7,10 +7,10 @@
                 <div class="col-lg-4 d-none d-xl-block">
                     <div class="single-widget footer-about">
                         <div class="widget-body">
-                            <img src="assets/img/footer-logo.png" alt="Divergent Studio">
+                            <img src="{{ asset('img/footer-logo.png') }}" alt="Space">
                             <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                             <p style="margin-top: 30px;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiust.</p>
-                            <a href="http://envato.rajuahammad.com" target="_blank" class="footer-btn">GET THIS TEMPLATE</a>
+                            <a href="/" target="_blank" class="footer-btn">Enquire Now</a>
                         </div>
                     </div>
                 </div>
@@ -22,10 +22,10 @@
                         <div class="col-lg-4 col-md-6 d-xl-none">
                             <div class="single-widget footer-about">
                                 <div class="widget-body">
-                                    <img src="assets/img/footer-logo.png" alt="Divergent Studio">
+                                    <img src="{{ asset('img/footer-logo.png') }}" alt="Spce">
                                     <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                                     <p style="margin-top: 30px;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiust.</p>
-                                    <a href="http://envato.rajuahammad.com" target="_blank" class="footer-btn">GET THIS TEMPLATE</a>
+                                    <a href="/" target="_blank" class="footer-btn">Enquire Now</a>
                                 </div>
                             </div>
                         </div>
@@ -103,12 +103,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="copyright-content">
-                        <p>&copy; Copyright 2017 Construction. All Rights Reserved.</p>
+                        <p>&copy; Copyright 2017 SpaceSpace. All Rights Reserved.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="powerby-content">
-                        <p>Powered by <a href="http://envato.rajuahammad.com" target="_blank">Divergent Studio</a></p>
+                        <p>Powered by <a href="http://envato.rajuahammad.com" target="_blank">Webmelbourne</a></p>
                     </div>
                 </div>
             </div>
