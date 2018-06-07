@@ -8,10 +8,41 @@
 @import "spacespace/assets/css/reset.css";
 
 @import "spacespace/assets/css/home-version.css";
+@import "spacespace/assets/css/page.css";
 @import "spacespace/assets/css/style.css";
 @import "spacespace/assets/css/responsive.css";
 
 
 .logo-area {
   padding: 0;
+}
+
+.tab-content .list-group{
+  padding-top: 2em;
+}
+
+.sidebar-body .media img{
+  width: 76px;
+  height: 76px;
+}
+
+.categoryfillter ul li {
+  border-bottom: none;
+}
+.categoryfillter span {
+    border-bottom: none;
+    padding: 0;
+}
+
+.categoryfillter {
+  margin-top: 2em;
+}
+
+.news-thum{
+  border-radius: 0;
+  height:18em;
+}
+
+.single-widget, .single-news-content {
+  margin-bottom: 2em;
 }

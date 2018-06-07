@@ -20,3 +20,10 @@
 
 <!--=== Mian Js ===-->
 <script src="{{ asset('js/main.js') }}"></script>
+
+<script src="{{ asset('js/all.js') }}"></script>
+@if(isset($vuejs_libs_required))
+    @foreach($vuejs_libs_required as $lib)
+        @include('frontend.vuejs.'.$lib)
+    @endforeach
+@endif

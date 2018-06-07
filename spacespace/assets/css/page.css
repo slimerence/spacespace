@@ -8,7 +8,7 @@
 }
 
 #page-title-area {
-    background-image: url("../img/hero-area-bg.jpg");
+    background-image: url("../img/banner/banner1.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -457,7 +457,7 @@
     letter-spacing: 0.7px;
     margin-bottom: 15px;
 }
-
+/*
 .single-content-open .project-infor p:nth-child(3) {
     color: #fab702;
     font-style: italic;
@@ -467,7 +467,7 @@
     color: #7d7d7d;
     font-style: normal;
 }
-
+*/
 .content-share-btn.project-share {
     margin-bottom: 0;
 }

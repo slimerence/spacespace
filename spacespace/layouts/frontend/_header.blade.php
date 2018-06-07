@@ -36,7 +36,7 @@
             <!-- Logo Area Start -->
             <div class="col-lg-3">
                 <div class="logo-area">
-                    <a href="index.html"><img src="{{ asset('img/logo.png') }}" alt="Divergent Studio"></a>
+                    <a href="/"><img src="{{ asset('img/logo.png') }}" alt="Spacespace"></a>
                 </div>
             </div>
             <!-- Logo Area End -->
@@ -45,21 +45,19 @@
             <div class="col-lg-9">
                 <nav class="main-menu alignright">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="/">Home</a></li>
                         <li><a href="#">Pages <i class="fa fa-angle-down"></i></a>
                             <ul class="sub-menu">
-                                <li><a href="/">Product1</a></li>
-                                <li><a href="/">Product2</a></li>
-                                <li><a href="/">Product3</a></li>
-                                <li><a href="/">Product4</a></li>
+                                <li><a href="/product">Product1</a></li>
+                                <li><a href="/product">Product2</a></li>
+                                <li><a href="/product">Product3</a></li>
+                                <li><a href="/product">Product4</a></li>
                             </ul>
                         </li>
-                        <li><a href="#about-area">About</a></li>
-                        <li><a href="#service-area">Services</a></li>
-                        <li><a href="project.html">Products</a></li>
-                        <li><a href="#partner-area">Partners</a></li>
-                        <li><a href="news.html">News &amp; Media</a></li>
-                        <li><a href="contact-us.html"> Contact Us</a></li>
+                        <li><a href="about-area">About</a></li>
+                        <li><a href="category">Products</a></li>
+                        <li><a href="/">News &amp; Media</a></li>
+                        <li><a href="/"> Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
