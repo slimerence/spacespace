@@ -54,10 +54,10 @@
                                 <li><a href="/product">Product4</a></li>
                             </ul>
                         </li>
-                        <li><a href="about-area">About</a></li>
+                        <li><a href="/">About</a></li>
                         <li><a href="category">Products</a></li>
                         <li><a href="/">News &amp; Media</a></li>
-                        <li><a href="/"> Contact Us</a></li>
+                        <li><a href="/contact-us"> Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
