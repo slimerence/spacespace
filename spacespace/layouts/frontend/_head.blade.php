@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
 
     <title>SPACE SPACE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link href="{{ asset('css/all.css') }}" rel="stylesheet">
 
 

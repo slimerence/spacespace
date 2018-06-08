@@ -79,10 +79,10 @@
                                     <h4>Contact Us</h4>
                                 </div>
                                 <div class="widget-body address-content">
-                                    <p class="address">2831 Richland Avenue <br>Stafford, TX 77477</p>
-                                    <a href="tel:01816277243"><span>Tel:</span> +000 875 7859</a>
-                                    <a href="tel:01816277243"><span>Mobile:</span> +000 897 2547</a>
-                                    <a href="mailto:rajuahammad73@gmail.com" class="email"><span>Email:</span> mail@rajmistri.com</a>
+                                    <p class="address">{{ $siteConfig->contact_address }}</p>
+                                    <a href="{{ 'tel:'.$siteConfig->contact_phone }}"><span>Tel:</span>{{$siteConfig->contact_phone}}</a>
+                                    <a href="{{ 'tel:'.$siteConfig->contact_fax }}"><span>Mobile:</span> {{$siteConfig->contact_fax}}</a>
+                                    <a href="{{ 'mailto:'.$siteConfig->contact_email }}" class="email"><span>Email:</span>{{ $siteConfig->contact_email }}</a>
                                     <a href="#" class="con-btn">Get Direction on Map <i class="fa fa-long-arrow-right"></i></a>
 
                                     <ul class="social-icon">

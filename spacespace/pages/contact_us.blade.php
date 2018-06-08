@@ -24,8 +24,8 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
                         <img src="{{ asset('img/svg-icon/support.svg') }}" alt="">
-                        <p><span>Tel: </span> +000 875 7859</p>
-                        <p><span>Mob: </span> +000 897 2547</p>
+                        <p><span>Tel: </span> {{$config->contact_phone}}</p>
+                        <p><span>Mob: </span> {{$config->contact_fax}}</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->
@@ -34,7 +34,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
                         <img src="{{ asset('img/svg-icon/map.svg') }}" alt="">
-                        <p><span>Head Office: </span>: 283 Richland <br>Avenue Stafford, TX 774</p>
+                        <p>{{ $config->contact_address }}</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->
@@ -43,8 +43,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
                         <img src="{{ asset('img/svg-icon/mail.svg') }}" alt="">
-                        <p><span>Email: </span> mail@rajmistri.com</p>
-                        <p><span>Web: </span> www.rajmistri.com</p>
+                        <p>{{ $config->contact_email }}</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->

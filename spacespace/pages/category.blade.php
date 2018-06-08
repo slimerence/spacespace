@@ -15,6 +15,8 @@
         </div>
     </section>
     <!--== Page Title Area End ==-->
+
+
     <section id="news-open-area" class="section-padding ">
         <div class="container">
 

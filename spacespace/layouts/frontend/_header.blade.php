@@ -40,28 +40,8 @@
                 </div>
             </div>
             <!-- Logo Area End -->
+            @include(_get_frontend_layout_path('frontend._nav'))
 
-            <!-- MianMenu or Navbar Start -->
-            <div class="col-lg-9">
-                <nav class="main-menu alignright">
-                    <ul>
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="/product">Product1</a></li>
-                                <li><a href="/product">Product2</a></li>
-                                <li><a href="/product">Product3</a></li>
-                                <li><a href="/product">Product4</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="category">Products</a></li>
-                        <li><a href="/">News &amp; Media</a></li>
-                        <li><a href="/contact-us"> Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- MianMenu or Navbar End -->
         </div>
     </div>
 </header>
