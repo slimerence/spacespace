@@ -12,7 +12,7 @@
             </div>
         </div>
     </section>
-    <section id="news-open-area" class="section-padding ">
+    <section id="category-view-manager" class="section-padding ">
         <div class="container">
 
             <!-- News Open page Contant Start -->

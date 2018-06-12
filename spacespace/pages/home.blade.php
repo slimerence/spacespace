@@ -160,7 +160,7 @@
         </div>
     </section>
     <!--== Service Area End ==-->
-@include(_get_frontend_layout_path('frontend.products'))
+
     <!--== Review Area Start ==-->
     <section id="review-area">
         <div class="container">

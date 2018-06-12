@@ -14,8 +14,8 @@
         </div>
     </section>
     <!--== Page Title Area End ==-->
-    <!--== News Open Page Start ==-->
-    <section id="news-open-area" class="section-padding">
+    <!--== Product Details ==-->
+    <section id="product-view-manager-app" class="section-padding">
         <div class="container">
             <!-- News Open page News Heading or Title Start -->
             <div class="row">
@@ -53,31 +53,54 @@
                                     <ul class="nav nav-tabs">
                                         <li class="nav-item">
                                             @if(!empty($product->description))
-                                                <a class="nav-link active" data-toggle="tab" href="#currentPreferences">Description</a>
+                                                <a class="nav-link active" data-toggle="tab" href="#product-description-tab-content">Description</a>
                                             @endif
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#alternative"> Details </a>
-                                        </li>
+                                        @foreach($product_attributes as $key=>$product_attribute)
+                                            @if($product_attribute->location == \App\Models\Utils\OptionTool::$LOCATION_ADDITIONAL)
+                                                <li class="nav-item">
+                                                    <a href="#tab-content-{{$key}}" data-toggle="tab" class="nav-link {{ $key==0&&empty($product->description) ? 'active' : null }}">{{ $product_attribute->name }}</a>
+                                                </li>
+                                            @endif
+                                        @endforeach
                                     </ul>
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="currentPreferences">
-                                            <ul class="list-group media-list media-list-stream">
-                                                {!! $product->description !!}
-                                            </ul>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade in" id="alternative">
-                                            <ul class="list-group media-list media-list-stream">
-                                                <ul>
-                                                    {!! $product->description !!}
-                                                </ul>
-                                            </ul>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade in" id="link">
-                                            <ul class="list-group media-list media-list-stream">
-                                                <p>At MyDeal.com.au it is our top priority to provide customers with a secure and enjoyable shopping experience. If there are any problems with your purchase please do not hesitate to contact us and our friendly Customer Support Team will assist you promptly.</p>
-                                            </ul>
-                                        </div>
+                                    @if(!empty($product->description))
+                                            <div role="tabpanel" class="tab-pane active" id="product-description-tab-content">
+                                            @if(count($productDescriptionTop) > 0)
+                                                @foreach($productDescriptionTop as $b)
+                                                        <ul class="list-group media-list media-list-stream">
+                                                            {!! $b->content !!}
+                                                        </ul>
+                                                @endforeach
+                                            @endif
+                                            {!! $product->description !!}
+                                            @if(count($productDescriptionBottom) > 0)
+                                                <div class="is-clearfix"></div>
+                                                @foreach($productDescriptionBottom as $b)
+                                                        <ul class="list-group media-list media-list-stream">
+                                                            {!! $b->content !!}
+                                                        </ul>
+                                                @endforeach
+                                            @endif
+                                            </div>
+                                    @endif
+
+                                    @foreach($product_attributes as $key=>$product_attribute)
+                                        @if($product_attribute->location == \App\Models\Utils\OptionTool::$LOCATION_ADDITIONAL)
+                                                <div role="tabpanel" class="tab-pane {{ $key==0&&empty($product->description) ? 'active' : ' ' }}" id="tab-content-{{$key}}">
+                                                    <ul class="list-group media-list media-list-stream">
+                                                    <?php
+                                                    $productAttributeValue = $product_attribute->valuesOf($product);
+                                                    // {!! $productAttributeValue->value !!}
+                                                    if(count($productAttributeValue)>0){
+                                                        echo $productAttributeValue[0]->value;
+                                                    }
+                                                    ?>
+                                                    </ul>
+                                                </div>
+                                        @endif
+                                    @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -151,6 +174,6 @@
             <!-- News Open page Contant End -->
         </div>
     </section>
-    <!--== News Open Page End ==-->
+    <!--== Product Details End ==-->
 
 @endsection

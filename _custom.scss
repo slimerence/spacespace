@@ -11,14 +11,21 @@
 @import "spacespace/assets/css/page.css";
 @import "spacespace/assets/css/style.css";
 @import "spacespace/assets/css/responsive.css";
-
+@import "../../../assets/sass/variables";
+@import "../../../assets/sass/frontend/category";
+@import "../../../assets/sass/frontend/catalog";
+@import "../../../assets/sass/frontend/checkout";
 
 .logo-area {
   padding: 0;
 }
 
 .tab-content .list-group{
-  padding-top: 2em;
+  margin:2em 0;
+}
+
+#product-description-tab-content{
+  margin:2em 0;
 }
 
 .sidebar-body .media img{

@@ -21,7 +21,6 @@ mix.js('resources/assets/js/app.js', 'public/js')
 mix.styles(['public/css/_custom.css'
 ], 'public/css/all.css');
 mix.scripts([
-    'public/js/app.js',
     'public/js/_custom.js'
 ], 'public/js/all.js');
 
