@@ -69,60 +69,60 @@
                 <div class="col-lg-12">
                     <div class="contact-form-contant">
                         <h3>Contact us for help!</h3>
-                        <form id="contactForm" name="sentMessage" novalidate>
+                        <form id="commentform" action="{{ url('contact-us') }}" method="post" class=contact-us-form">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="user" value="{{ session('user_data.uuid') }}">
                             <div class="row">
                                 <!-- Name Input Start -->
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please Write your Name.">
-                                        <p class="help-block text-danger"></p>
+                                        <input class="form-control input" name="name" type="text" placeholder="Your Name" id="input-name" required>
                                     </div>
                                 </div>
                                 <!-- Name Input End -->
-
-                                <!-- Email Input Start -->
-                                <div class="col-lg-6 col-md-6">
+                                <!-- Subject Input Start -->
+                                <div class="col-lg-6  col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please Enter your Email Address.">
-                                        <p class="help-block text-danger"></p>
+                                        <input class="form-control input" name="mobile" type="text" placeholder="Your Phone #" id="input-phone" required>
+                                    </div>
+                                </div>
+                                <!-- Subject Input End -->
+                                <!-- Email Input Start -->
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <input class="form-control input" type="email" placeholder="Your Email" name="email" id="input-email" required>
                                     </div>
                                 </div>
                                 <!-- Email Input End -->
 
-                                <!-- Subject Input Start -->
-                                <div class="col-lg-6  col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="subject" type="text" placeholder="Subject *" required data-validation-required-message="Please Write your Contact Subject.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <!-- Subject Input End -->
-
-                                <!-- City Input Start -->
-                                <div class="col-lg-6  col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="city" type="text" placeholder="City Name">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <!-- City Input End -->
-
                                 <!-- Message Input Start -->
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please Write Your message."></textarea>
-                                        <p class="help-block text-danger"></p>
+                                        <textarea rows="6" class="textarea form-control" placeholder="Your Message *" id="input-message" name="message"></textarea>
                                     </div>
                                 </div>
                                 <!-- Message Input End -->
-
+                                <div class="col-md-12">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked>
+                                            I agree to the <a href="{{ url('/terms') }}">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
                                 <!-- Submit Input Start -->
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button id="sendMessageButton" class="raj_btn" type="submit">Send Now <i class="fa fa-send-o"></i></button>
+                                    <button id="submit-contact-us-btn" class="raj_btn" type="submit">Send Now <i class="fa fa-send-o"></i></button>
                                 </div>
                                 <!-- Submit Input End -->
+                                <div class="notification is-primary" style="display: none;margin-top: 10px;" id="txt-on-success">
+                                    Your enquiry form has been saved, we will contact you very soon!
+                                </div>
+                                <div class="notification is-danger" style="display: none;margin-top: 10px;" id="txt-on-fail">
+                                    System is busy, please try again later!
+                                </div>
                             </div>
                         </form>
                     </div>
