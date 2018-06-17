@@ -84,12 +84,20 @@
                                     <a href="{{ 'tel:'.$siteConfig->contact_fax }}"><span>Mobile:</span> {{$siteConfig->contact_fax}}</a>
                                     <a href="{{ 'mailto:'.$siteConfig->contact_email }}" class="email"><span>Email:</span>{{ $siteConfig->contact_email }}</a>
                                     <a href="#" class="con-btn">Get Direction on Map <i class="fa fa-long-arrow-right"></i></a>
-
+                                    @if(isset($siteConfig))
                                     <ul class="social-icon">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        @if(!empty($siteConfig->facebook))
+                                            <li><a href="{{ $siteConfig->facebook }}"><i class="fa fa-facebook"></i></a></li>
+                                        @endif
+                                        @if(!empty($siteConfig->twitter))
+                                            <li><a href="{{ $siteConfig->twitter }}"><i class="fa fa-twitter"></i></a></li>
+                                        @endif
+                                        @if(!empty($siteConfig->linked_in))
+                                            <li><a href="{{ $siteConfig->linked_in }}"><i class="fa fa-linkedin"></i></a></li>
+                                        @endif
                                     </ul>
+                                    @endif
+
                                 </div>
                             </div>
                         </div>
@@ -108,7 +116,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="powerby-content">
-                        <p>Powered by <a href="http://envato.rajuahammad.com" target="_blank">Webmelbourne</a></p>
+                        <p>Powered by <a href="https://www.webmelbourne.com/" target="_blank">Webmelbourne</a></p>
                     </div>
                 </div>
             </div>

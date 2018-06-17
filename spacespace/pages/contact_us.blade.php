@@ -130,12 +130,12 @@
             </div>
         </div>
     </section>
-    <!--== Contact Us Form End ==-->
 
-    <!--== Google Map Area Start ==-->
+    @if($config->embed_map_code)
     <div id="google-map-area">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3660.6768235772975!2d91.13049751440194!3d23.43603870663053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1508563567887"></iframe>
+        {!! $config->embed_map_code !!}
     </div>
     <!--== Google Map Area End ==-->
+    @endif
 
 @endsection

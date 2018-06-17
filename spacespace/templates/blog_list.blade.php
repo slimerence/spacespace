@@ -14,29 +14,36 @@
         </div>
     </section>
     <!--== Page Title Area End ==-->
+    <section id="news-page-news-feed">
+        <div class="container">
+            <div class="row">
+            @foreach($posts as $key=>$post)
+                <!-- Single News Start -->
+                <div class="col-lg-4 col-md-6 news-slice">
+                    <div class="single-news-content">
+                        <a href="{{ url('/page'.$post->uri) }}" class="news-thum" style="background-image:url({{ asset($post->feature_image) }}); "></a>
+                        <div class="news-contant">
+                            <h4><a href="{{ url('/page'.$post->uri) }}">{!! 'cn'==app()->getLocale() ? $post->title_cn : $post->title !!}</a></h4>
 
-    <div class="page-title-wrap">
-        <h1 class="is-size-1-desktop is-size-1-mobile">Blog</h1>
-    </div>
-    <div class="page-content-wrap mb-20">
-        @foreach($posts as $key=>$post)
-            <div class="columns">
-                <div class="column is-one-quarter">
-                    <a href="{{ url('/page'.$post->uri) }}">
-                        <img class="image post-feature-image" src="{{ asset($post->feature_image) }}" alt="{{ $post->title }}">
-                    </a>
-                </div>
-                <div class="column">
-                    <h2 class="is-size-3">
-                        <a href="{{ url('/page'.$post->uri) }}">{!! 'cn'==app()->getLocale() ? $post->title_cn : $post->title !!}</a>
-                    </h2>
-                    <div class="post-teasing">
-                        {!! $post->teasing !!}
+                            <p class="blog-desc">{!! $post->teasing !!}</p>
+                            <p class="news-meta">
+                            <!--<a href="{{ url('/page'.$post->uri) }}"><i class="fa fa-clock-o"></i> 10, October, 2017</a>-->
+                                <a href="{{ url('/page'.$post->uri) }}" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <!-- Single News End  -->
+            @endforeach
+                {{ $posts->links() }}
             </div>
-        @endforeach
-            <hr>
-        {{ $posts->links() }}
-    </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="#" class="news-see-more-btn raj_btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
