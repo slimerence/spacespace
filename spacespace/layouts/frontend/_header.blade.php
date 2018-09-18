@@ -34,9 +34,9 @@
     <div class="container">
         <div class="row">
             <!-- Logo Area Start -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 align-self-center">
                 <div class="logo-area">
-                    <a href="/"><img src="{{ asset('img/logo.png') }}" alt="Spacespace"></a>
+                    <a href="/"><img src="{{ asset('images/logo.png') }}" alt="Spacespace"></a>
                 </div>
             </div>
             <!-- Logo Area End -->

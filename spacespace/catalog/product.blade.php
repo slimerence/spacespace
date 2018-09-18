@@ -108,13 +108,7 @@
                         <!-- Product Details End-->
                     </div>
 
-                    <!-- News Share Like Button -->
-                    <div class="content-share-btn project-share">
-                        <a href="http://facebook.com/divergentstudiobd" target="_blank"><i class="fa fa-facebook"></i> Like</a>
-                        <a href="http://facebook.com/divergentstudiobd" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
-                        <a href="http://facebook.com/divergentstudiobd" target="_blank"><i class="fa fa-share-alt"></i> Share</a>
-                    </div>
-                    <!-- News Share Like Button -->
+
                 </div>
                 <!-- News Open page News Content End -->
 

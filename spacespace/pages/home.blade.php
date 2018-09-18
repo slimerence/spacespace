@@ -16,7 +16,7 @@
                                     <!-- Single HeroBox Start -->
                                     <div class="col-lg-4 text-center">
                                         <div class="single-hero-box">
-                                            <img src="{{ asset('img/svg-icon/house.svg') }}" alt="Space Space">
+                                            <img src="{{ asset('images/svg-icon/house.svg') }}" alt="Space Space">
                                             <h3>Best Products</h3>
                                             <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
                                         </div>
@@ -26,7 +26,7 @@
                                     <!-- Single HeroBox Start -->
                                     <div class="col-lg-4 text-center">
                                         <div class="single-hero-box">
-                                            <img src="{{ asset('img/svg-icon/crane.svg') }}" alt="Space Space">
+                                            <img src="{{ asset('images/svg-icon/crane.svg') }}" alt="Space Space">
                                             <h3>Best Quailty</h3>
                                             <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
                                         </div>
@@ -36,7 +36,7 @@
                                     <!-- Single HeroBox Start -->
                                     <div class="col-lg-4 text-center">
                                         <div class="single-hero-box">
-                                            <img src="{{ asset('img/svg-icon/plug.svg') }}" alt="Space Space">
+                                            <img src="{{ asset('images/svg-icon/plug.svg') }}" alt="Space Space">
                                             <h3>Best Staff</h3>
                                             <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
                                         </div>
@@ -223,23 +223,6 @@
             </div>
 
             <div class="row">
-                <!-- Single News Start -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news-content">
-                        <a href="news-open.html" class="news-thum news-thumbg-1"></a>
-                        <div class="news-contant">
-                            <h4><a href="news-open.html">Condo Developers Bet Jersey City Will Be the Next Brooklyn.</a></h4>
-
-                            <p class="news-meta">
-                                <a href="#"><i class="fa fa-clock-o"></i> 10, October, 2017</a>
-                                <a href="news-open.html" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </p>
-
-                            <p>Lorem ipsum dadipi sit amet, consectetur adipi elit, sed do eiusmod tempor incididunt ut labore et dolore adipi magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single News End  -->
 
                 <!-- Single News Start -->
                 <div class="col-lg-4 col-md-6">
@@ -252,30 +235,12 @@
                                 <a href="#"><i class="fa fa-clock-o"></i> 10, October, 2017</a>
                                 <a href="news-open.html" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
                             </p>
-
                             <p>Lorem ipsum dadipi sit amet, consectetur adipi elit, sed do eiusmod tempor incididunt ut labore et dolore adipi magna aliqua.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Single News End  -->
 
-                <!-- Single News Start -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news-content">
-                        <a href="news-open.html" class="news-thum news-thumbg-3"></a>
-                        <div class="news-contant">
-                            <h4><a href="news-open.html">No. 7 Line Subway Extension Project Won ENR.</a></h4>
-
-                            <p class="news-meta">
-                                <a href="#"><i class="fa fa-clock-o"></i> 10, October, 2017</a>
-                                <a href="news-open.html" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </p>
-
-                            <p>Lorem ipsum dadipi sit amet, consectetur adipi elit, sed do eiusmod tempor incididunt ut labore et dolore adipi magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single News End  -->
             </div>
         </div>
     </section>

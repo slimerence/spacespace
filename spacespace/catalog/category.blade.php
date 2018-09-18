@@ -45,33 +45,28 @@
                         <div class="col-lg-12">
                             <div class="row">
                                 <?php
-                                $productsChunk = $products->chunk(4);
-                                // 尝试加载产品的 Brand 的 Logo, 为了减少数据库的查询, 在这里做一个缓存
-                                $imageLogoBuffer = [];
-
-                                foreach ($productsChunk as $row) {
+                                $productsChunk = $products->chunk(3);
                                 ?>
+                                @foreach ($productsChunk as $row)
 
                                     @foreach($row as $key=>$product)
-                                    <div class="col-lg-4 col-md-6 news-slice">
-                                        <div class="single-news-content">
-
+                                        <div class="col-lg-4 col-md-6 news-slice">
+                                            <div class="single-news-content">
                                                 <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }})"></a>
-                                                    <div class="news-contant">
-                                                        <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
-                                                        <p class="news-meta">
-                                                            <a href="#"><i class="fa fa-money"></i>${{ $product->getDefaultPriceGST() }}</a>
-                                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                                            {!! $product->short_description !!}
-                                                        </p>
+                                                <div class="product-content">
+                                                    <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
+                                                    <div class="news-meta">
+                                                        @if($product->special_price)
+                                                            <a href="{{ url('catalog/product/'.$product->uri) }}"><strong style="text-decoration: line-through;">${{ $promotionProduct->getSpecialPriceGST() }}</strong> <span>${{ $promotionProduct->getDefaultPriceGST() }}</span></a>
+                                                        @else <a href="{{ url('catalog/product/'.$product->uri) }}">${{ $product->getDefaultPriceGST() }}</a>
+                                                        @endif
+                                                        <a href="{{ url('catalog/product/'.$product->uri) }}" class="alignright rd-btn">View Now <i class="fa fa-eye fa-fw"></i></a>
                                                     </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-
                                     @endforeach
-                                    <?php
-                                    }
-                                    ?>
+                                @endforeach
 
                             </div>
                             <div class="row">
