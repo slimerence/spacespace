@@ -25,7 +25,6 @@
                     <div class="single-contact-info">
                         <img src="{{ asset('img/svg-icon/support.svg') }}" alt="">
                         <p><span>Tel: </span> {{$config->contact_phone}}</p>
-                        <p><span>Mob: </span> {{$config->contact_fax}}</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->
@@ -52,8 +51,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
                         <img src="{{ asset('img/svg-icon/clock.svg') }}" alt="">
-                        <p><span>Week Days: </span> 05:00 – 22:00</p>
-                        <p><span>Sunday: </span> Closed</p>
+                        <p><span>Open: </span> 24/7</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->

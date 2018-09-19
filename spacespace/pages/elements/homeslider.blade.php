@@ -8,8 +8,8 @@
                     <div class="col-lg-12">
                         <div class="slide-content hero-text text-center">
                             <h2>WE Are Spacespace<br>Let build Something New!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolorAe magna aliqua. Ut enim ad minim veniam.</p>
-                            <a href="#" class="raj_btn">Explore More <i class="fa fa-long-arrow-right"></i></a>
+                            <p>Victoria Technology Pty Ltd trading as SpaceSapce are a direct importer of shop fittings and storage solutions. </p>
+                            <a href="{{ url('about-us') }}" class="raj_btn">Explore More <i class="fa fa-long-arrow-right"></i></a>
 
                         </div>
                     </div>
@@ -25,8 +25,8 @@
                     <div class="col-lg-12">
                         <div class="slide-content hero-text text-center">
                             <h2>I believe honesty <br> is the keystone of business</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolorAe magna aliqua. Ut enim ad minim veniam.</p>
-                            <a class="raj_btn" href="#">Explore More <i class="fa fa-long-arrow-right"></i></a>
+                            <p>We have been in this line for more than 13 years and we stored wide range of quality shop fittings and shelves</p>
+                            <a class="raj_btn" href="{{ url('about-us') }}">Explore More <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     <div class="col-lg-12">
                         <div class="slide-content hero-text text-center">
                             <h2>Differed learning bringing<br>honoured at mean </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolorAe magna aliqua. Ut enim ad minim veniam.</p>
-                            <a class="raj_btn" href="#">Explore More <i class="fa fa-long-arrow-right"></i></a>
+                            <p>We could make special offer according to your shop plan. Please contact us with your shop measurement or drawing design. </p>
+                            <a class="raj_btn" href="{{ url('about-us') }}">Explore More <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

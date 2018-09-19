@@ -8,9 +8,6 @@
                     <div class="single-widget footer-about">
                         <div class="widget-body">
                             <img src="{{ asset('images/footer-logo.png') }}" alt="Space">
-                            <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            <p style="margin-top: 30px;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiust.</p>
-                            <a href="/" target="_blank" class="footer-btn">Enquire Now</a>
                         </div>
                     </div>
                 </div>
@@ -23,9 +20,6 @@
                             <div class="single-widget footer-about">
                                 <div class="widget-body">
                                     <img src="{{ asset('images/footer-logo.png') }}" alt="Spce">
-                                    <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                    <p style="margin-top: 30px;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiust.</p>
-                                    <a href="/" target="_blank" class="footer-btn">Enquire Now</a>
                                 </div>
                             </div>
                         </div>
@@ -39,13 +33,9 @@
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Partners</a></li>
-                                        <li><a href="#">Newsletter</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="{{ url('/') }}">Home</a></li>
+                                        <li><a href="{{ url('/about-us') }}">About Us</a></li>
+                                        <li><a href="{{ url('/page/blog') }}">Our Work</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,16 +46,13 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-widget">
                                 <div class="widget-title">
-                                    <h4>Services</h4>
+                                    <h4>Info</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">Buliding Construction</a></li>
-                                        <li><a href="#">Concrete Transport</a></li>
-                                        <li><a href="#">Renovation</a></li>
-                                        <li><a href="#">General Bulider</a></li>
-                                        <li><a href="#">Refurbisment</a></li>
-                                        <li><a href="#">Security Service</a></li>
+                                        <li><a href="{{ url('/term') }}">Terms & Conditions</a></li>
+                                        <li><a href="{{ 'tel:'.$siteConfig->contact_phone }}"><span>Tel:</span>{{$siteConfig->contact_phone}}</a></li>
+                                        <li><a href="{{ 'mailto:'.$siteConfig->contact_email }}"><span>Email:</span>{{ $siteConfig->contact_email }}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,14 +63,12 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-widget">
                                 <div class="widget-title">
-                                    <h4>Contact Us</h4>
+                                    <h4>Address</h4>
                                 </div>
                                 <div class="widget-body address-content">
                                     <p class="address">{{ $siteConfig->contact_address }}</p>
-                                    <a href="{{ 'tel:'.$siteConfig->contact_phone }}"><span>Tel:</span>{{$siteConfig->contact_phone}}</a>
-                                    <a href="{{ 'tel:'.$siteConfig->contact_fax }}"><span>Mobile:</span> {{$siteConfig->contact_fax}}</a>
-                                    <a href="{{ 'mailto:'.$siteConfig->contact_email }}" class="email"><span>Email:</span>{{ $siteConfig->contact_email }}</a>
-                                    <a href="#" class="con-btn">Get Direction on Map <i class="fa fa-long-arrow-right"></i></a>
+
+                                    <a href="{{ url('contact-us') }}" class="con-btn">Get Direction on Map <i class="fa fa-long-arrow-right"></i></a>
                                     @if(isset($siteConfig))
                                     <ul class="social-icon">
                                         @if(!empty($siteConfig->facebook))
@@ -111,7 +96,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="copyright-content">
-                        <p>&copy; Copyright 2017 SpaceSpace. All Rights Reserved.</p>
+                        <p>&copy; Copyright 2018 SpaceSpace. All Rights Reserved.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

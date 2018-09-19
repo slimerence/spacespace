@@ -2,7 +2,7 @@
 <div class="col-lg-9">
     <nav class="main-menu alignright">
         <ul>
-            <li class="active"><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/') }}">Home</a></li>
             <li><a href="#" target="_self" onclick="return false;">Categories <i class="fa fa-angle-down"></i></a>
                 <ul class="sub-menu">
                     @foreach ($categoriesTree as $item)
